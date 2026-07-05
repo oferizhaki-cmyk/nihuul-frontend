@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   // Login
   const login = async (email, password) => {
     try {
-      const apiUrl = 'https://endearing-mercy-production-c80e.up.railway.app';
+      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
       
       console.log('🔵 Login attempt:', { email, apiUrl });
       
