@@ -4,8 +4,8 @@ import './App.css';
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
 
 function LoginPage({ onSwitchToSignUp }) {
-  const [email, setEmail] = useState('admin@test.com');
-  const [password, setPassword] = useState('admin123');
+  cconst [email, setEmail] = useState('')
+const [password, setPassword] = useState('')
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
